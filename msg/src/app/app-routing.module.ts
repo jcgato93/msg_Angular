@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: '', component: LoginComponent},
   {path: 'login', component: LoginComponent},
   {path:'home', component:HomeComponent},
-  {path: 'conversation', component: ConversationComponent},
+  {path: 'conversation/:uid', component: ConversationComponent},
   {path: 'profile', component: ProfileComponent }
 ];
 
