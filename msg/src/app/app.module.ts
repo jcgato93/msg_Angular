@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { NavigationComponent } from './Components/navigation/navigation.component';
 
+// Edit and upload images
+import { ImageCropperModule } from 'ngx-image-cropper';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { NavigationComponent } from './Components/navigation/navigation.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,    
+    MaterialModule,  
+    ImageCropperModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

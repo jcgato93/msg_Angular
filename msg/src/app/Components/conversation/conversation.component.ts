@@ -27,8 +27,8 @@ export class ConversationComponent implements OnInit {
       friend: false,
       uid: 0
     };
-
-    user.uid= Number(this.activateRoute.snapshot.params['uid']);
+    user = this.activateRoute.snapshot.params['uid'];
+    //user.uid= Number(this.activateRoute.snapshot.params['uid']);
     console.log(user)
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageCroppedEvent } from 'ngx-image-cropper/src/image-cropper.component';
 
 @Component({
   selector: 'app-profile',
@@ -11,5 +12,22 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+  imageChangedEvent: any = '';
+croppedImage: any = '';
+
+fileChangeEvent(event: any): void {
+    this.imageChangedEvent = event;
+}
+imageCropped(event: ImageCroppedEvent) {
+    this.croppedImage = event.base64;
+}
+imageLoaded() {
+    // show cropper
+}
+loadImageFailed() {
+    // show message
+}
 
 }
