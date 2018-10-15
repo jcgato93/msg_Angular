@@ -7,6 +7,10 @@ import { LoginComponent } from './Components/login/login.component';
 import { HomeComponent } from './Components/home/home.component';
 import { ConversationComponent } from './Components/conversation/conversation.component';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { NavigationComponent } from './Components/navigation/navigation.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { ProfileComponent } from './Components/profile/profile.component';
     LoginComponent,
     HomeComponent,
     ConversationComponent,
-    ProfileComponent
+    ProfileComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]
